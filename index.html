@@ -1,129 +1,164 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Modern Forms</title>
 
-<link rel="icon" href="./assets/img/favicon/favicon.ico">
+<link rel="icon" href="assets/favicon/favicon.ico">
 
-<!-- Bootstrap -->
+
+<!-- BOOTSTRAP -->
 <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> --> 
 
 <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 
-<!-- Font Awesome -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- FONT AWESOME ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<!-- CSS -->
 <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
 
-<body>
+<body class="bg-light">
 
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
 <div class="container">
 
 <a class="navbar-brand fw-bold" href="#">
 <span class="text-primary">MF</span> Modern Forms
 </a>
 
-<div class="collapse navbar-collapse justify-content-end">
-<ul class="navbar-nav">
+<ul class="navbar-nav ms-auto flex-row gap-3">
 
 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+<a class="nav-link text-primary" href="tailwind.html">
+Versión Tailwind
+</a>
 
 </ul>
-</div>
 
 </div>
 </nav>
 
+
 <!-- FORMULARIO -->
 
-<section class="form-section">
+<div class="container d-flex justify-content-center mt-5">
 
-<div class="container d-flex justify-content-center">
+<div class="card shadow p-4 formulario">
 
-<div class="form-card">
-<h2 class="title text-center">Contáctanos</h2>
-<p class="subtitle text-center">Completa el formulario para enviarnos tu mensaje.</p>
+<h2 class="text-center text-primary fw-bold">Contáctanos</h2>
+
+<p class="text-center text-muted">
+Completa el formulario para enviarnos tu mensaje.
+</p>
 
 <form>
 
-<label class="form-label">Nombre Completo</label>
+<!-- NOMBRE -->
+
+<label class="fw-bold">Nombre Completo</label>
 
 <div class="input-group mb-3">
+
 <span class="input-group-text">
 <i class="fa-solid fa-user"></i>
 </span>
+
 <input type="text" class="form-control" placeholder="Juan Pérez">
+
 </div>
 
-<label class="form-label">Correo Electrónico</label>
+
+<!-- EMAIL -->
+
+<label class="fw-bold">Correo Electrónico</label>
 
 <div class="input-group mb-3">
+
 <span class="input-group-text">
-<i class="fa-solid fa-envelope"></i>
+<i class="fa-regular fa-envelope"></i>
 </span>
+
 <input type="email" class="form-control" placeholder="juan.perez@email.com">
+
 </div>
 
-<label class="form-label">Número de Teléfono</label>
+
+<!-- TELEFONO -->
+
+<label class="fw-bold">Número de Teléfono</label>
 
 <div class="input-group mb-3">
+
 <span class="input-group-text">
 <i class="fa-solid fa-phone"></i>
 </span>
+
 <input type="text" class="form-control" placeholder="+34 612 345 678">
+
 </div>
 
-<label class="form-label">Ciudad / Localidad</label>
+
+<!-- CIUDAD -->
+
+<label class="fw-bold">Ciudad / Localidad</label>
 
 <div class="input-group mb-3">
+
 <span class="input-group-text">
 <i class="fa-solid fa-location-dot"></i>
 </span>
+
 <input type="text" class="form-control" placeholder="Madrid">
+
 </div>
 
-<label class="form-label">Tu Mensaje</label>
 
-<textarea class="form-control mb-4" rows="4"
-placeholder="Escribe tu consulta aquí..."></textarea>
+<!-- MENSAJE -->
 
-<button class="btn btn-primary w-100 btn-submit">
+<label class="fw-bold">Tu Mensaje</label>
+
+<textarea class="form-control mb-3" rows="4" placeholder="Escribe tu consulta aquí..."></textarea>
+
+
+<button class="btn btn-primary w-100">
 Enviar
 </button>
 
 </form>
 
 </div>
+
 </div>
 
-</section>
 
 <!-- FOOTER -->
 
-<footer class="footer text-center">
+<footer class="text-center mt-5 border-top p-3">
 
-<p> </p>
-<p> </p>
-<p>Desarrollado por: Diana González Rivera</p>
-<p>Materia: Desarrollo Web</p>
-<p>2026</p>
-<p> </p>
+<p class="mb-0">
+Desarrollado por: González Rivera Diana Laura
+</p>
+
+<p class="mb-0">
+Materia: Desarrollo Web
+</p>
+
+<p class="mb-0">
+2026
+</p>
 
 </footer>
+
 </body>
 </html>
